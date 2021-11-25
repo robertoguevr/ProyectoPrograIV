@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Inicio">
+
+    <ImageView
+        android:id="@+id/iv_venom"
+        android:layout_width="176dp"
+        android:layout_height="252dp"
+        android:layout_below="@+id/estrenos"
+        android:layout_toRightOf="@+id/iv_suicideSquad"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/venom2" />
+
+    <TextView
+        android:id="@+id/estrenos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:text="Estrenos"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/iv_suicideSquad"
+        android:layout_width="176dp"
+        android:layout_height="252dp"
+        android:layout_below="@+id/estrenos"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ss" />
+
+    <ImageView
+        android:id="@+id/iv_dune"
+        android:layout_width="176dp"
+        android:layout_height="252dp"
+        android:layout_below="@+id/iv_suicideSquad"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/duneposter" />
+
+    <ImageView
+        android:id="@+id/iv_shangChi"
+        android:layout_width="176dp"
+        android:layout_height="252dp"
+        android:layout_below="@+id/iv_venom"
+        android:layout_toRightOf="@+id/iv_suicideSquad"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/shangchi" />
+
+</RelativeLayout>
