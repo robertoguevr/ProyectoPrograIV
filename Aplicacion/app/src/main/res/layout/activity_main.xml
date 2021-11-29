@@ -7,6 +7,7 @@
     android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/signin"
         android:layout_width="match_parent"
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ed_Username"
         android:layout_margin="10dp"
+        android:inputType="textPassword"
         android:background="#30ffffff"
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"

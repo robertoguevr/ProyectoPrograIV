@@ -20,13 +20,11 @@
         android:id="@+id/estrenos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp"
         android:gravity="center"
         android:text="Estrenos"
         android:textColor="@color/white"
         android:textSize="35dp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/iv_suicideSquad"
@@ -58,5 +56,17 @@
         android:layout_toRightOf="@+id/iv_suicideSquad"
         android:layout_margin="10dp"
         app:srcCompat="@drawable/shangchi" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/iv_dune"
+        android:layout_margin="20dp"
+        android:backgroundTint="#BF9310"
+        android:drawableLeft="@drawable/ic_add"
+        android:text="Agregar"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
 </RelativeLayout>
