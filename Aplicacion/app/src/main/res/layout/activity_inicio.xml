@@ -4,69 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
-    tools:context=".Inicio">
+    android:background="#B900BCD4">
 
     <ImageView
-        android:id="@+id/iv_venom"
-        android:layout_width="176dp"
-        android:layout_height="252dp"
-        android:layout_below="@+id/estrenos"
-        android:layout_toRightOf="@+id/iv_suicideSquad"
-        android:layout_margin="10dp"
-        app:srcCompat="@drawable/venom2" />
+        android:id="@+id/imageView7"
+        android:layout_width="129dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/shangchi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="137dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/venom2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="133dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="135dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/eternals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="133dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/BlackWidow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="135dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/cruella"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/estrenos"
-        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_width="339dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Estrenos"
-        android:textColor="@color/white"
-        android:textSize="35dp"
-        android:textStyle="bold" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="Peliculas"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/iv_suicideSquad"
-        android:layout_width="176dp"
-        android:layout_height="252dp"
-        android:layout_below="@+id/estrenos"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/ss" />
-
-    <ImageView
-        android:id="@+id/iv_dune"
-        android:layout_width="176dp"
-        android:layout_height="252dp"
-        android:layout_below="@+id/iv_suicideSquad"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/duneposter" />
-
-    <ImageView
-        android:id="@+id/iv_shangChi"
-        android:layout_width="176dp"
-        android:layout_height="252dp"
-        android:layout_below="@+id/iv_venom"
-        android:layout_toRightOf="@+id/iv_suicideSquad"
-        android:layout_margin="10dp"
-        app:srcCompat="@drawable/shangchi" />
-
-    <Button
-        android:id="@+id/btnAgregar"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@+id/iv_dune"
-        android:layout_margin="20dp"
-        android:backgroundTint="#BF9310"
-        android:drawableLeft="@drawable/ic_add"
-        android:text="Agregar"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
 
 </RelativeLayout>

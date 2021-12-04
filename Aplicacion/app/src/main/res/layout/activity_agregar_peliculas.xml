@@ -4,96 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
-    tools:context=".AgregarPeliculas">
-
-    <TextView
-        android:id="@+id/tv_Titulo"
-        android:layout_width="87dp"
-        android:layout_height="35dp"
-        android:text="Titulo"
-        android:layout_margin="20dp"
-        android:textColor="#F6F5F5"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="59dp" />
+    android:background="#B900BCD4">
 
     <EditText
-        android:id="@+id/et_Titulo"
+        android:id="@+id/edNombrePelicula"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_Titulo"
-        android:layout_margin="10dp"
-        android:background="#30ffffff"
-        android:drawablePadding="20dp"
-        android:padding="20dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"/>
-
-    <TextView
-        android:id="@+id/Sinopsis"
-        android:layout_width="139dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/et_Titulo"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="Sinopsis"
-        android:textColor="#F6F5F5"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="59dp" />
-    <EditText
-        android:id="@+id/et_Sinopsis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Sinopsis"
-        android:layout_margin="10dp"
-        android:background="#30ffffff"
-        android:drawablePadding="20dp"
-        android:padding="20dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"/>
-
-    <TextView
-        android:id="@+id/Duracion"
-        android:layout_width="139dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/et_Sinopsis"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="Duracion"
-        android:textColor="#F6F5F5"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="59dp" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:hint="Nombre Pelicula"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/et_Duracion"
+        android:id="@+id/edDuracion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Duracion"
-        android:inputType="number"
-        android:layout_margin="10dp"
-        android:background="#30ffffff"
-        android:drawablePadding="20dp"
-        android:padding="20dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"/>
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:hint="Duracion"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edTrailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/teal_200"
+        android:ems="10"
+        android:hint="Trailer"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnAgregar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@+id/et_Duracion"
-        android:layout_margin="20dp"
-        android:backgroundTint="#BF9310"
-        android:text="Guardar"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_rounded"
+        android:src="@drawable/ic_add"
+        android:text="Agregar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTrailer" />
 
+    <Button
+        android:id="@+id/btnAgregarPortada"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_rouded_border"
+        android:drawableBottom="@drawable/ic_add"
+        android:text="Agregar Portada"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </RelativeLayout>
