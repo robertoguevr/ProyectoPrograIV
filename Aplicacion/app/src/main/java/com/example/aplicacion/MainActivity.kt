@@ -17,7 +17,7 @@ import java.lang.Exception
 
     //Datos de usuarios para el logueo que estan estaticos
     var usu1= arrayOf("Dayana","Castro","daya","1234")
-    var usu2= arrayOf("Ronald","Figueroa","ronald","1234")
+    var usu2= arrayOf("Ronald","Figueroa","ronald","4567")
     var usu3= arrayOf("Marcos","Miranda","marcos","1234")
     var usu4= arrayOf("Milton","Barrera","mil","1234")
     var usu5= arrayOf("Enmanuel","Orellana","enma","1234")
