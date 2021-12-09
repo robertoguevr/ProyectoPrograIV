@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import java.lang.Exception
 
 
@@ -54,15 +56,23 @@ import java.lang.Exception
             if (result) contador=1
         }
         if(contador==1){
-            startActivity(Intent(this,MenuActivity::class.java))
+            startActivity(Intent(this,ActivityInicio::class.java))
             contador=0
         }else {
             Toast.makeText(this, "Credenciales Incorrectas", Toast.LENGTH_LONG).show()
         }
     }
+    //Conexion a base de datos
+    private fun getRetrofit(): Retrofit {
+        return  Retrofit.Builder()
+            .baseUrl("http://192.168.1.10:8080/API/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+    }
 
     //Funcion para ir al Registro
     fun onLoginClick(view: View?) {
-        startActivity(Intent(this,NewUserActivity::class.java))
-        overridePendingTransition(R.anim.slide_in_left,android.R.anim.slide_out_right);
-}
+        startActivity(Intent(this, NuevoUsuario::class.java))
+        overridePendingTransition(R.anim.slide_in_left, android.R.anim.slide_out_right);
+    }
+    }
